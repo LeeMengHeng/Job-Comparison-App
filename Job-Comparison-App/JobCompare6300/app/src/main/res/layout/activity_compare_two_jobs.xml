@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CompareTwoJobsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#3D50BA"
+                android:text="Compare Two Jobs"
+                android:textAlignment="center"
+                android:textColor="#D0FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/compareTwoJobsListview"
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:clickable="true"
+                android:scrollbarSize="3dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:scrollingCache="true"
+                android:smoothScrollbar="true" >
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/AnotherCompare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000FF"
+                    android:onClick="onJobComparerClick"
+                    android:text="Another Compare"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="Suspicious0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/returnToMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000FF"
+                    android:onClick="onReturnToMainClick"
+                    android:text="Return to Main Menu"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="Suspicious0dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
